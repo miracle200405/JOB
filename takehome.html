@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Take-Home Pay Calculator</title>
+    <link rel="stylesheet" href="css/style1.css" />
+    <script src="take.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Take-Home Pay Calculator</h1>
+      <div class= "navbar">
+          <div class= "navbar">
+            <a href="index.html">Home</a> 
+            <a href="findjob.html" >jobs</a>
+            <a href="takehome.html" >Calculator</a>
+            <a href="contact.html" >Contact</a>
+          </div>
+    </header>
+    
+    <main>
+      <form id="payForm">
+        <div class="form-group">
+          <label for="jobTitle">Job Title:</label>
+          <input type="text" id="jobTitle" name="jobTitle" required />
+        </div>
+        <div class="form-group">
+          <label for="grossPay">Gross Pay (£):</label>
+          <input type="number" id="grossPay" name="grossPay" required min="0" />
+        </div>
+        <div class="form-group">
+          <label for="payPeriod">Pay Period:</label>
+          <select id="payPeriod" name="payPeriod">
+            <option value="month">Monthly</option>
+            <option value="year">Yearly</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="hoursPerWeek">Hours per Week:</label>
+          <input type="number" id="hoursPerWeek" required min="1" max="168" />
+        </div>
+        <div class="form-group">
+          <label for="taxRate">Tax Rate (%):</label>
+          <input type="number" id="taxRate" required min="0" max="100" />
+        </div>
+        <div class="form-group">
+          <label for="niRate">NI Rate (%):</label>
+          <input type="number" id="niRate" required min="0" max="100" />
+        </div>
+        <button type="button" onclick="calculateTakeHomePay()">
+          Calculate
+        </button>
+      </form>
+      <section id="result" class="result"></section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Take-home Calculator. All rights reserved.</p>
+    </footer>
+    <script src="js/take.js"></script>
+  </body>
+</html>

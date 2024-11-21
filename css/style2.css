@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #00b074;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#home {
+  background-image: linear-gradient(to bottom, green, #555);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+#home h1 {
+  font-size: 48px;
+}
+
+#home p {
+  font-size: 24px;
+}
+.search {
+  background-color: grey;
+  border: none;
+  color: white;
+}
+
+#jobs {
+  padding: 20px;
+}
+
+#jobs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#jobs li {
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#jobs h3 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#jobs p {
+  font-size: 18px;
+}
+.button1 {
+  background-color: #00b074;
+  border: 2px solid rgb(181, 173, 173);
+}
+
+#about {
+  padding: 20px;
+}
+
+#about h2 {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+#about p {
+  font-size: 18px;
+}
+
+#contact {
+  padding: 20px;
+}
+#contact h2 {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+#contact button {
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #00b074;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
